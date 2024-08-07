@@ -1,0 +1,22 @@
+/* Header.css */
+
+.Header {
+  position: fixed;
+  font-size: 20px;
+  font-family: Helvetica;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #ff751a; /* Original orange background color */
+  z-index: 100;
+
+}
+
+.scrolled-up {
+  background-color: #ff751a; /* Change background color to white when scrolled up */
+  color: black; /* Change font color to black when scrolled up */
+}
+
+

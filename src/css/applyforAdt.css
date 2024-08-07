@@ -1,0 +1,140 @@
+.adtoverlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #000000CC;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    visibility: visible;
+    z-index: 5;
+}
+
+.adtmodal {
+    cursor: default;
+    background: white;
+    padding: 40px;
+    width: 100%;
+    max-width: 75%;
+    height: 72%;
+    max-height: 100%;
+    overflow-y: auto;
+    position: relative; /* Add this line */
+}
+
+.adt-form h1 {
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: Helvetica;
+    color: #ff751a;
+    font-weight: bold;
+    margin-top: -50px;
+}
+
+.adt-form h2{
+    font-size: 1.3rem;
+}
+
+.adt-form h3{
+    font-size: 0.9rem;
+}
+
+.adt-form {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 17px; 
+}
+
+.adt-group {
+    /* display: grid; */
+    font-family: Futura, sans-serif;
+    gap: 25px; /* Increased gap between label and input */
+}
+
+.adt-group label {
+    margin-bottom: 25px;
+}
+
+.adt-input-wrapper {
+    border: 0.5px solid grey;
+    /* opacity: 0.5; */
+    font-size: 0.9rem;
+    padding: 2px;
+    display: flex;
+    /* align-items: center; */
+}
+
+.adt-input-wrapper:active{
+    border: 0.5px solid #ff751a;
+}
+
+.adt-input-field {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    background: transparent;
+}
+
+.adt-close-icon {
+    position: absolute; /* Change to absolute */
+    top: 0px; /* Adjust as needed */
+    right: 0px; /* Adjust as needed */
+    font-weight: bold;
+    align-items: flex-end;
+    justify-content: right;
+    font-size: 1.5rem;
+    cursor: pointer;
+    /* transition: color 0.3s; */
+}
+
+.adt-forgot-password-link {
+    color: #ff751a;
+    padding-top: 5px;
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.adt-forgot-password-link:hover {
+    text-decoration: underline;
+}
+
+.adt-submit-button {
+    padding: 1px 10px;
+    background: #ff751a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.adt-submit-button:hover{
+    background: #da6a1f;
+}
+
+.adt-date-time-group {
+    display: flex;
+    gap: 20px; /* Adjust the gap as needed */
+}
+.adt-date-wrapper, .adt-time-wrapper {
+    flex: 1;
+}
+.adt-input-wrapper {
+    position: relative;
+}
+.adt-input-field[type='date']::before {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.adt-input-field[type='time']::before {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}

@@ -1,0 +1,262 @@
+.dummyspace {
+  height: 19rem;
+}
+
+.center {
+  max-width: 984px;
+  padding: 0 1rem;
+  margin: auto;
+}
+
+.track-page-sub-heading {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 1.5rem;
+  color: #FF751A;
+  font-weight: 758;
+  margin-top: 1.6rem;
+  margin-left: 25px;
+  margin-bottom: 0;
+}
+
+.section h1 {
+  font-family: Helvetica;
+  font-size: 69px;
+  color: #FF751A;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 95px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+.course-card-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.course_cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.course_card {
+  width: 450px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: #FF751A;
+  color: #fff;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%) !important;
+}
+
+.course_details {
+  height: 100%;
+  min-width: 24.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.course_img {
+  background: url('../assets/course1.png') center center;
+  background-size: cover;
+  height: 15rem;
+  border-radius: 0.5rem;
+  display: block;
+}
+
+.course_img1 {
+  background: url('../assets/cyberforsenic.png') center center;
+  background-size: cover;
+  height: 15rem;
+  border-radius: 0.5rem;
+  display: block;
+}
+
+.course_details_in {
+  padding: auto;
+  color: #fff;
+}
+
+.course_title {
+  font-family: Helvetica;
+  padding: auto;
+  font-size: 1.4rem;
+  margin: 1rem 0 0;
+  font-weight: 900;
+}
+
+.course_rate {
+  padding: 0.5rem 0;
+}
+
+.course-instructor {
+  font-family: Futura, sans-serif;
+  display: flex;
+  gap: 1rem;
+  color: #fff;
+  align-items: center;
+  align-content: center;
+}
+
+.course-btn-flex {
+  display: flex;
+  margin-top: 1rem;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.button {
+  -webkit-text-size-adjust: 100%;
+  box-sizing: inherit;
+  cursor: pointer;
+  display: inline-block;
+  min-height: 1em;
+  outline: 0;
+  border: none;
+  vertical-align: baseline;
+  background: #ffffff none;
+  border: 1px solid #FF751A;
+  color: rgba(0, 0, 0, .6);
+  font-family: "Proxima Nova", sans-serif;
+  margin: 0 .25em 0 0;
+  padding: .78571429em 1.5em .78571429em;
+  text-transform: none;
+  text-shadow: none;
+  font-weight: 700;
+  line-height: 1em;
+  font-style: normal;
+  text-align: center;
+  text-decoration: none;
+  border-radius: .28571429rem;
+  box-shadow: 0 0 0 1px transparent inset, 0 0 0 0 rgba(34, 36, 38, .15) inset;
+  user-select: none;
+  transition: opacity .1s ease, background-color .1s ease, color .1s ease, box-shadow .1s ease, background .1s ease, -webkit-box-shadow .1s ease;
+}
+
+.white-orange {
+  background-color: white;
+  color: #FF751A;
+}
+
+.course_card_flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.course-rating {
+  display: flex;
+  align-items: center;
+}
+
+.rating-stars {
+  font-size: 1.25rem;
+}
+
+.rating-value {
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+.course_share {
+  margin-left: 0.5rem;
+}
+
+.discount_rate {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.real_rate {
+  text-decoration: line-through;
+  margin-left: 0.5rem;
+}
+
+.discount_cent {
+  margin-left: 0.5rem;
+}
+
+.teams-page-heading-one {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 2.5rem;
+  color: #FF751A;
+  font-weight: 758;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .course-card-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .course_cards {
+      grid-template-columns: 1fr;
+      justify-items: center;
+  }
+
+  .course_card {
+      width: 100%;
+      max-width: 450px;
+      margin: 0 auto;
+  }
+}
+
+/* Animation Classes */
+.animate__animated {
+  animation-duration: 1s;
+}
+
+.animate__fadeIn {
+  animation-name: fadeIn;
+}
+
+.animate__fadeInLeft {
+  animation-name: fadeInLeft;
+}
+
+.animate__fadeInRight {
+  animation-name: fadeInRight;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

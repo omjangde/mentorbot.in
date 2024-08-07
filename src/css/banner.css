@@ -1,0 +1,166 @@
+/* //banner.css */
+
+.container {
+    max-width: 1750px;
+    margin: auto;
+    border-radius: 8px;
+}
+
+.banner {
+    height: 100vh; /* Adjust as needed */
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 10;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.controls button {
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    cursor: pointer;
+    
+}
+
+.desktop-images {
+    display: flex;
+    height: 100%;
+
+    /* transition: transform 1s ease-in-out; */
+}
+
+.image-container1 {
+    flex: 0 0 100%;
+    height: 100%;
+    transition: opacity 1s ease-in-out; /*Transition for fading effect*/
+    opacity: 0; /* Default to more transparent */
+}
+
+.image-container1.active {
+    opacity: 1; /* Fully opaque when active */
+}
+
+
+.image-container1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.desktop-images .banner-text-left{
+    position: absolute;
+    display: inline-block; 
+    opacity: 0;
+    animation: slideLeftWord 1s ease forwards;
+    animation-delay: 1s;
+}
+.desktop-images .banner-text-right{
+    position: absolute;
+    display: inline-block; 
+    opacity: 0;
+    animation: slideRightWord 1s ease forwards;
+    animation-delay: 1s;
+    /* text-align: center; */
+}
+.desktop-images h1 {
+    top: 7.5rem;
+    left: -7rem;
+    font-family: Helvetica;
+    color: black;
+    font-size: 3rem;
+    font-weight: bold;
+    position: absolute;
+    text-align: left;
+}
+.desktop-images h2 {
+    font-family: "Proxima Nova", sans-serif;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    color: black;
+    font-size: 3rem;
+    text-align: center;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+.desktop-images h3{
+    font-family: Helvetica;
+    position: absolute;
+    text-align: left;
+    font-weight: bold;
+    font-size: 3rem;
+    color:darkblue;
+    top: 10rem;
+    left: -16rem;
+    /* animation: slideLeftWord 2s ease forwards;
+    animation-delay: 2s; */
+}
+
+.desktop-images h4{
+    font-family: Futura, sans-serif;
+    position: absolute;
+    text-align: left;
+    font-size: 1.3rem;
+    top: 30rem;
+    left: 4rem;
+    color:darkslateblue;
+    /* animation: slideLeftWord 2s ease forwards; */
+    /* animation-delay: 2s; */
+}
+
+.desktop-images h5{
+    font-family: Helvetica;
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+    top: 8rem;
+    left: -5rem;
+    /* animation: slideLeftWord 2s ease forwards; */
+    /* animation-delay: 2s; */
+}
+.desktop-images h6{
+    font-family: "Proxima Nova", sans-serif;
+    position: absolute;
+    text-align: center;
+    font-size: 1.4rem;
+    top: 19.5rem;
+    left: 3.5rem;
+    color:rgb(46, 46, 75);
+    /* animation: slideLeftWord 2s ease forwards; */
+    /* animation-delay: 2s; */
+}
+
+@keyframes slideLeftWord {
+    0% {
+        transform: translateX(0%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+}
+@keyframes slideRightWord {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 0.8;
+    }
+}

@@ -1,0 +1,44 @@
+/* Partner.css */
+
+.partner-container {
+  text-align: center;
+  margin: 20px;
+  font-size: 2.25rem;
+  font-family: Helvetica;
+  color: #FF751A;
+  margin-top: 2%;
+  padding-top: 1%;
+  overflow: hidden; /* Hide the overflow to prevent scrollbars */
+}
+
+.partner-images {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Increase the gap between images */
+  animation: slide 5s linear infinite; /* Apply the animation */
+  margin-left: 25%; /* Adjust the left margin to create space */
+  margin-right: 25%; /* Adjust the right margin to create space */
+  overflow: hidden; /* Hide overflow to prevent scrollbars */
+}
+
+.partner-image-container2 {
+  display: flex;
+  justify-content: center;
+  height: 6rem;
+}
+
+.partner-images img {
+  width: 150px; /* Adjust the width as needed */
+  height: auto;
+  max-height: 100px; /* Ensure images do not exceed this height */
+  object-fit: contain; /* Ensure images fit within the given dimensions */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(50%); /* Adjust starting position to 50% from the left */
+  }
+  100% {
+    transform: translateX(-50%); /* Adjust ending position to -150% to fully slide out */
+  }
+}

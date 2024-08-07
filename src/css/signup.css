@@ -1,0 +1,135 @@
+.soverlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #000000CC;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    visibility: visible;
+    z-index: 5;
+}
+
+.smodal {
+    cursor: default;
+    background: white;
+    padding: 60px;
+    padding-right: 0px;
+    width: 100%;
+    max-width: 450px;
+    height: 65vh;
+    max-height: 80%;
+    overflow-y: auto;
+    position: relative; /* Add this line */
+}
+
+.signup-form h1 {
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: Helvetica;
+    color: #ff751a;
+    font-weight: bold;
+    margin-top: -50px;
+}
+
+.signup-form {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 17px; 
+}
+
+.sinput-group {
+    /* display: grid; */
+    font-family: Futura, sans-serif;
+    gap: 35px; /* Increased gap between label and input */
+}
+
+.sinput-group label {
+    margin-bottom: 25px;
+}
+
+.sinput-wrapper {
+    /* background-color: #f1f5f9; */
+    border: 0.5px solid grey;
+    /* opacity: 0.5; */
+    padding: 7px;
+    display: flex;
+    /* align-items: center; */
+}
+
+.sinput-wrapper:active{
+    border: 0.5px solid #ff751a;
+}
+
+.sinput-field {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    background: transparent;
+}
+
+.sclose-icon {
+    position: absolute; /* Change to absolute */
+    top: 0px; /* Adjust as needed */
+    right: 0px; /* Adjust as needed */
+    font-weight: bold;
+    align-items: flex-end;
+    justify-content: right;
+    font-size: 1.5rem;
+    cursor: pointer;
+    /* transition: color 0.3s; */
+}
+
+.rememberMe{
+    display: flex;  
+    align-items:baseline;
+    /* gap: 15px; */
+}
+
+.stoggle-password {
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 8px;
+}
+
+.sforgot-password-link {
+    color: #ff751a;
+    padding-top: 5px;
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.sforgot-password-link:hover {
+    text-decoration: underline;
+}
+
+.register-button {
+    padding: 8px 16px;
+    background: #ff751a;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.register-button:hover{
+    background: #da6a1f;
+}
+
+.login-link {
+    text-align: center;
+}
+
+.login-link .login-link-highlight {
+    color: #ff751a;
+    transition: color 0.2s;
+}
+
+.login-link .login-link-highlight:hover{
+    text-decoration: underline;
+}

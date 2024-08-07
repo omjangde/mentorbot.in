@@ -1,0 +1,19 @@
+/* Header.css */
+.Header {
+  position: fixed;
+  font-size: 20px;
+  font-family: Helvetica;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #ff751a; /* Original orange background color */
+  z-index: 100;
+  transition: top 0.3s ease, opacity 0.3s ease, background-color 0.3s ease; /* Smooth transition for top, opacity and background color */
+}
+
+.Header.hide {
+  top: -100px; /* Adjust as necessary to hide the Header */
+  opacity: 0;
+}

@@ -1,0 +1,118 @@
+.dummyspace{
+    height:8rem;
+}
+.course-band {
+    background: #FF751A;
+    color: #fff;
+    padding: 1rem 0;
+    margin: 1rem 0;
+}
+.center {
+    max-width: 984px;
+    padding: 0 1rem;
+    margin: auto;
+}
+/* Default styling for .center */
+
+  
+  /* Media query for devices with a width between 768px and 1024px */
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .center {
+      max-width: 1024px;
+    }
+  }
+
+ 
+.mb-subheading {
+    text-align: left;
+    font-size: 2.5rem;
+    color: var(--mbr);
+    font-weight: 750;
+    margin-bottom: 1rem;
+}
+  
+blog-band-color {
+    color: #fff;
+    margin-top: 0;
+    text-align: left;
+    margin-bottom: 0.4rem;
+}
+
+.out-course-img {
+    border-radius: 0.5rem;
+}
+.course-right-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.course-details-box {
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%) !important;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+.margin-1rem {
+    margin-bottom: 1rem;
+}
+.font-weigh {
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #FF751A;
+    margin-bottom: 1rem;
+    font-family: "Proxima Nova", sans-serif;
+
+}
+.course_rate {
+    padding: 0.5rem 0;
+
+}
+.orange {
+    color: #FF751A !important;
+}
+.discount_rate {
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding-right: 1rem;
+}
+.real_rate {
+    text-decoration: line-through;
+}
+.discount_cent {
+    font-weight: 700;
+}
+.button {
+    -webkit-text-size-adjust: 100%;
+    box-sizing: inherit;
+    cursor: pointer;
+    display: inline-block;
+    min-height: 1em;
+    outline: 0;
+    border: none;
+    vertical-align: baseline;
+    background: #ffffff none;
+    border: 1px solid var(--mbr);
+    color: rgba(0, 0, 0, .6);
+    font-family: "Google Sans Text", Roboto, Arial, sans-serif;
+    margin: 0 .25em 0 0;
+    padding: .78571429em 1.5em .78571429em;
+    text-transform: none;
+    text-shadow: none;
+    font-weight: 700;
+    line-height: 1em;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    border-radius: .28571429rem;
+    box-shadow: 0 0 0 1px transparent inset, 0 0 0 0 rgba(34, 36, 38, .15) inset;
+    user-select: none;
+    transition: opacity .1s ease, background-color .1s ease, color .1s ease, box-shadow .1s ease, background .1s ease, -webkit-box-shadow .1s ease;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 1rem;
+}
+.orange-btn {
+    background: #FF751A!important;
+    color: #fff !important;
+}
+.text{
+    font-family: Futura, sans-serif;
+}

@@ -1,0 +1,184 @@
+/* General styles */
+.center {
+    max-width: 984px;
+    padding: 0 1rem;
+    margin: auto;
+    font-family: "Futura", sans-serif;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .box-shade {
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: #fff;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .image-container {
+    text-align: center;
+    margin-bottom: 1rem;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .out-course-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+  }
+  
+  .course-details-content {
+    padding: 1rem;
+    font-family: "Futura", sans-serif;
+  }
+  
+  .course-band {
+    background: #FF751A;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    font-family: "Proxima Nova", sans-serif;
+    animation: slideInLeft 1s ease-in-out;
+  }
+  
+  .course-details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  
+  .course-details-left,
+  .course-details-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .course-details-box {
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: #f9f9f9;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .mb-subheading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #FF751A;
+    font-family: "Proxima Nova", sans-serif;
+    animation: slideInLeft 1s ease-in-out;
+  }
+  
+  .margin-1rem {
+    margin-bottom: 1rem;
+  }
+  
+  .price-details {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FF751A;
+  }
+  
+  .current-price {
+    margin-right: 0.5rem;
+  }
+  
+  .original-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-right: 0.5rem;
+  }
+  
+  .discount {
+    color: #FF751A;
+  }
+  
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid var(--mbr);
+    border-radius: 0.28571429rem;
+    background: #fff;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    font-family: "Proxima Nova", sans-serif;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+  
+  .button:hover {
+    background-color: #FF751A;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+  
+  .orange-btn {
+    background-color: #FF751A;
+    color: #fff;
+  }
+  
+  .font-size09 {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 1rem;
+    color: #888;
+  }
+  
+  .text {
+    font-family: "Futura", sans-serif;
+  }
+  
+  .black-text {
+    color: black;
+  }
+  
+  ul {
+    color: black;
+    font-family: "Futura", sans-serif;
+  }
+  
+  /* Responsive styles */
+  @media only screen and (max-width: 768px) {
+    .course-details-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .buttons-container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  

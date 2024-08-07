@@ -1,0 +1,87 @@
+.client-slider-container {
+    background: linear-gradient(159deg, #f9f7f6 0%, #ff751a 100%);
+    padding: 1.5rem 1rem;
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column; /* Ensure the content stacks vertically */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    gap: 1rem; /* Add gap between elements */
+    height: 400px;
+    overflow-y: auto; /* Add vertical scrollbar */
+}
+
+.theader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.theader .tquote {
+    font-size: 15px;
+    color: black;
+    opacity: 0.7;
+}
+
+.tbody {
+    font-size: 1rem;
+    font-family: Futura;
+    margin-bottom: 1.5rem;
+    overflow: auto; /* Add overflow auto to ensure scrollbar if text overflows */
+}
+
+.tbody::-webkit-scrollbar {
+    width: 6px; /* Decreased width of the scrollbar */
+}
+
+.tbody::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background color of the scrollbar track */
+}
+
+.tbody::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners of the scrollbar thumb */
+}
+
+.tbody::-webkit-scrollbar-thumb:hover {
+    background: #888; /* Color when hovering over the scrollbar thumb */
+}
+
+.tfooter {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.05rem;
+}
+
+.tfooter img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.tfooter h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+@media (max-width: 580px) {
+    .tfooter h1 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 538px) {
+    .tfooter h1 {
+        font-size: 0.9rem;
+    }
+
+    .tfooter p {
+        font-size: 0.6rem;
+    }
+}
+
+.tfooter p {
+    font-size: 1rem;
+    color: white;
+}

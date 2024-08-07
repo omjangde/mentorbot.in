@@ -1,0 +1,125 @@
+/* New CSS for hover zoom-in effect */
+.client-card {
+    transition: transform 0.3s ease;
+}
+
+.client-card:hover {
+    transform: scale(1.05); /* Zoom-in effect */
+}
+
+/* Existing CSS */
+.tcontainer {
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-top: 4rem;
+    padding-bottom: 0.1rem;
+    text-align: center; /* Center content */
+}
+
+@media (max-width: 840px) {
+    .tcontainer {
+        width: 90%;
+        height: 100%;
+    }
+}
+
+.tcontainer .orange {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 2.25rem;
+    font-family: Helvetica;
+    color: #ff751a; /* Adjusted color */
+    opacity: 0; /* Hide initially for animation */
+    animation: fadeIn 1.7s forwards; /* Entrance animation */
+}
+
+.tcontainer h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-family: Helvetica;
+    font-size: 20px;
+}
+
+.slick-list,
+.slick-slider,
+.slick-track {
+    padding: 0;
+}
+
+.slick-dots {
+    text-align: center;
+    margin-left: 1rem;
+}
+
+.slick-dots li button:before {
+    content: "";
+}
+
+.slick-dots li button {
+    width: 15px;
+    height: 9px;
+    background: linear-gradient(
+        159deg,
+        rgb(45, 45, 58) 0%,
+        rgb(43, 43, 53) 100%
+    );
+    padding: 0.1rem;
+    margin-top: 1rem;
+    transition: all 400ms ease-in-out;
+    border-radius: 10px;
+}
+
+.slick-dots li.slick-active button {
+    background: #ff751a;
+    width: 15px;
+}
+
+.slick-dots li {
+    margin: 0;
+}
+
+.testimonials {
+    margin-top: 2rem;
+    position: relative;
+    text-align: center;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.testimonials:hover {
+    transform: scale(0.95); /* Hover zoom-out effect */
+    transition: transform 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tbuttons {
+    text-align: center;
+    margin-top: 1rem; /* Adjusted margin */
+}
+
+.tbuttons button {
+    background-color: transparent;
+    margin-left: 1.7rem;
+    margin-top: 2rem;
+    border: none;
+    color: #ff751a;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 530px) {
+    .tbuttons {
+        display: none;
+    }
+}

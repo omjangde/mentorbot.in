@@ -1,0 +1,197 @@
+/* ContactUs.css */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+.contact-section {
+  margin-top: 5px;
+}
+
+.contact-header {
+  background-image: url('https://example.com/path-to-image.jpg'); /* Add your image URL */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1; /* Ensure overlay is below the text */
+}
+
+.contact-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #fff;
+  position: relative;
+  z-index: 2; /* Ensure text is above the overlay */
+}
+
+.vertical-line {
+  display: none;
+  width: 4px;
+  height: 100px;
+  background-color: #fff;
+  margin-right: 20px;
+  margin-top: 37px;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 37px;
+  color: #FF751A;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+}
+
+.breadcrumbs-wrapper {
+  margin: 20px 0;
+  background-color: #f8f8f8;
+  padding: 10px 0;
+}
+
+.breadcrumbs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 5px;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  color: #FF751A;
+}
+
+.breadcrumbs li {
+  display: inline;
+}
+
+.address-section {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.address-cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.address-card {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 30%;
+}
+
+.address-card .icon {
+  margin-bottom: 15px;
+  color: #FF751A;
+}
+
+.address-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+}
+
+.address-card p {
+  margin: 0;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-links a {
+  color: #FF751A;
+  transition: transform 0.2s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.1);
+}
+
+.contact-form-section {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form-section .container {
+  max-width: 800px;
+  width: 100%;
+}
+
+.contact-form-section .title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.wpcf7-form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.wpcf7-submit {
+  background-color: #FF751A;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.wpcf7-submit:hover {
+  background-color: #FF751A;
+}
+
+.map-section {
+  margin-bottom: 200px; /* Adjust margin as needed */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .address-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .address-card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .contact-title {
+    font-size: 1.75rem;
+  }
+
+  .contact-form-section .container {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .address-card {
+    width: 90%;
+  }
+
+  .contact-title {
+    font-size: 1.5rem;
+  }
+}

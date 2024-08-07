@@ -1,0 +1,136 @@
+/* Container and Layout */
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem; /* Increased padding for better spacing */
+}
+
+.box-shade {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow for better depth */
+    border-radius: 12px; /* Slightly larger radius for smoother corners */
+    overflow: hidden;
+    width: 100%;
+    max-width: 900px; /* Increased max-width for larger screens */
+    background-color: #fff; /* White background for better contrast */
+    margin: 2rem 0; /* Added margin for spacing around the box */
+}
+
+/* Margin Utilities */
+.margin-1rem {
+    margin: 1rem;
+}
+
+.margin-2rem {
+    margin: 2rem;
+}
+
+/* Image Styling */
+.out-course-img {
+    padding-top: 10%;
+    width: 100%;
+    height: auto;
+    display: block; /* Ensures the image is displayed as a block element */
+    margin: 0 auto; /* Centers the image */
+}
+.job-details-content ul li {
+    font-size: 1.6rem; /* Match font size with other text */
+    margin-left: 1.5rem; /* Add margin for indentation */
+    color: #000; /* Set text color to black */
+    padding:1px;
+}
+
+/* Text Content Styling */
+.blog-article-description,
+.job-details-content,
+.location,
+.experience-level,
+.type {
+    font-size: 1.5rem; /* Increased font size */
+    line-height: 1.6; /* Improved line height for readability */
+    margin: 1rem 0; /* Added margin between each element */
+    padding :4px; /* Added padding for better text spacing */
+    color: #000; /* Set text color to black */
+}
+
+.location,
+.experience-level,
+.type {
+    margin-top: 0.5rem; /* Added margin-top to separate these elements */
+}
+
+.font-size09 {
+    font-size: 1.6rem; /* Increased font size */
+    color: #000; /* Set text color to black */
+    padding: 0 1.5rem; /* Consistent padding */
+    text-align: center;
+}
+
+/* Button Styling */
+.button.orange-btn {
+    background-color: #ff7f50; /* More subtle orange color */
+    color: white;
+    padding: 0.75rem 1.5rem; /* Larger padding for better button size */
+    text-decoration: none;
+    border-radius: 8px; /* Larger radius for smoother corners */
+    text-align: center;
+    margin: 1.5rem; /* Increased margin for better spacing */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.button.orange-btn:hover {
+    background-color: #ff6347; /* Slightly darker shade on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .box-shade {
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 992px) {
+    .box-shade {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 768px) {
+    .box-shade {
+        max-width: 100%;
+    }
+
+    .blog-article-description,
+    .job-details-content,
+    .location,
+    .experience-level,
+    .type {
+        font-size: 1.2rem; /* Adjusted font size */
+        padding: 0 1rem;
+    }
+
+    .button.orange-btn {
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .box-shade {
+        max-width: 100%;
+    }
+
+    .blog-article-description,
+    .job-details-content,
+    .location,
+    .experience-level,
+    .type {
+        font-size: 1rem; /* Adjusted font size */
+        padding: 0 0.75rem;
+    }
+
+    .button.orange-btn {
+        padding: 0.5rem;
+        width: 100%;
+        text-align: center;
+    }
+}
